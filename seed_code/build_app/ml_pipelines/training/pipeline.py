@@ -130,7 +130,7 @@ def get_pipeline(
     model_approval_status = ParameterString(name="ModelApprovalStatus", default_value="PendingManualApproval")
     input_data = ParameterString(
         name="InputDataUrl",
-        default_value=f"s3://sagemaker-servicecatalog-seedcode-{region}/dataset/abalone-dataset.csv",
+        default_value= "",
     )
     processing_image_name = "sagemaker-{0}-processingimagebuild".format(project_id)
     training_image_name = "sagemaker-{0}-trainingimagebuild".format(project_id)
